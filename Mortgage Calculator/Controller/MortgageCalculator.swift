@@ -25,7 +25,7 @@ class MortgageCalculator: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     func calculateMonthlyRepayment() {
@@ -102,6 +102,18 @@ class MortgageCalculator: UIViewController {
         calculateStampDuty()
         calculateLTV()
         
+    }
+    
+
+}
+
+extension MortgageCalculator: UITextFieldDelegate {
+
+
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        view.endEditing(true)
     }
 
 }

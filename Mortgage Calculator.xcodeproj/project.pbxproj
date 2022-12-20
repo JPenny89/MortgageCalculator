@@ -13,7 +13,6 @@
 		6325BD3D2950A59C0099B3BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6325BD3B2950A59C0099B3BD /* Main.storyboard */; };
 		6325BD3F2950A59F0099B3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6325BD3E2950A59F0099B3BD /* Assets.xcassets */; };
 		6325BD422950A59F0099B3BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6325BD402950A59F0099B3BD /* LaunchScreen.storyboard */; };
-		63DFB2D32950BC2700A12A60 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DFB2D22950BC2700A12A60 /* Parameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		6325BD3E2950A59F0099B3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6325BD412950A59F0099B3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6325BD432950A59F0099B3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63DFB2D22950BC2700A12A60 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 			children = (
 				6325BD352950A59C0099B3BD /* AppDelegate.swift */,
 				6325BD372950A59C0099B3BD /* SceneDelegate.swift */,
-				6325BD4C2950AB3C0099B3BD /* Model */,
 				6325BD4D2950AB420099B3BD /* View */,
 				6325BD4B2950AB2C0099B3BD /* Controller */,
 				6325BD3E2950A59F0099B3BD /* Assets.xcassets */,
@@ -76,14 +73,6 @@
 				6325BD392950A59C0099B3BD /* MortgageCalculator.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		6325BD4C2950AB3C0099B3BD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				63DFB2D22950BC2700A12A60 /* Parameters.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		6325BD4D2950AB420099B3BD /* View */ = {
@@ -165,7 +154,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DFB2D32950BC2700A12A60 /* Parameters.swift in Sources */,
 				6325BD3A2950A59C0099B3BD /* MortgageCalculator.swift in Sources */,
 				6325BD362950A59C0099B3BD /* AppDelegate.swift in Sources */,
 				6325BD382950A59C0099B3BD /* SceneDelegate.swift in Sources */,
