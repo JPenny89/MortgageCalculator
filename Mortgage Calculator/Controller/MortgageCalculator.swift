@@ -21,6 +21,7 @@ class MortgageCalculator: UIViewController {
     @IBOutlet weak var valueTextField: UITextField!
     @IBOutlet weak var monthlyPayment: UILabel!
     @IBOutlet weak var stampDuty: UILabel!
+    @IBOutlet weak var loanToValue: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,12 +83,24 @@ class MortgageCalculator: UIViewController {
         }
         
     }
+    
+    func calculateLTV() {
+        
+        let loan = Double (loanTextField.text!) ?? 0.0
+        let value = Double (valueTextField.text!) ?? 0.0
+        
+        let ltv = (loan/value) * 100
+        
+        loanToValue.text = String(format: "%.1f", Double(ltv)) + "%"
+        
+    }
         
 
     @IBAction func calculatePressed(_ sender: Any) {
         
         calculateMonthlyRepayment()
         calculateStampDuty()
+        calculateLTV()
         
     }
 
