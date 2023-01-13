@@ -101,6 +101,8 @@ class MortgageCalculator: UIViewController {
         
         
     }
+    
+    //comment
 
     
     func calculateStampDuty() {
@@ -152,6 +154,8 @@ class MortgageCalculator: UIViewController {
             
             print("Borrowing Dropdown = \(borrowingDropdown.currentTitle)")
         }
+    //comment
+    
     
 
 }
