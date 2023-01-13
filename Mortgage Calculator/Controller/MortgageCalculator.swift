@@ -109,22 +109,24 @@ class MortgageCalculator: UIViewController {
         
         let propertyValue = Double (valueTextField.text!) ?? 0.0
         
-        if propertyValue > 1500000 {
+        if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 1500000 {
             let bandFourTop = propertyValue - 1500000
             let bandFourPercentage = (bandFourTop * 12) / 100
             let bandFourTotal = 33750 + 57500 + bandFourPercentage
             stampDuty.text = "£" + String(format: "%.2f", Double(bandFourTotal))
-        } else if propertyValue > 925000 && propertyValue <= 1500000 {
+        } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 925000 && propertyValue <= 1500000 {
             let bandThreeTop = propertyValue - 925000
             let bandThreePercentage = (bandThreeTop * 10) / 100
             let bandThreeTotal = 33750 + bandThreePercentage
             stampDuty.text = "£" + String(format: "%.2f", Double(bandThreeTotal))
-        } else if propertyValue > 250000 && propertyValue <= 925000 {
+        } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 250000 && propertyValue <= 925000 {
             let bandTwoTop = propertyValue - 250000
             let bandTwoPercentage = (bandTwoTop * 5) / 100
             stampDuty.text = "£" + String(format: "%.2f", Double(bandTwoPercentage))
-        } else {
+        } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue <= 250000 {
             stampDuty.text = "£" + String(format: "%.2f", 0)
+        } else {
+            print("Fail")
         }
         
     }
