@@ -38,6 +38,13 @@ class MortgageCalculator: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        borrowingDropdown.titleLabel?.text = "Type of Borrowing"
+        
+        monthlyPayment.text = "£0.00"
+        stampDuty.text = "£0"
+        loanToValue.text = "0%"
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CellClass.self, forCellReuseIdentifier: "Cell")
@@ -109,7 +116,6 @@ class MortgageCalculator: UIViewController {
         
         let propertyValue = Double (valueTextField.text!) ?? 0.0
         
-        
         if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue > 1500000 {
             let bandFourTopFTB = propertyValue - 1500000
             let bandFourPercentageFTB = (bandFourTopFTB * 12) / 100
@@ -128,9 +134,11 @@ class MortgageCalculator: UIViewController {
             let bandTwoTopFTB = propertyValue - 425000
             let bandTwoPercentageFTB = (bandTwoTopFTB * 5) / 100
             stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentageFTB))
-        } else if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue <= 250000 {
-            stampDuty.text = "£" + String(format: "%.0f", 0)
         }
+        
+//        else if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue <= 250000 {
+//            stampDuty.text = "£" + String(format: "%.0f", 0)
+//        }
         
         
         else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 1500000 {
@@ -147,11 +155,11 @@ class MortgageCalculator: UIViewController {
             let bandTwoTop = propertyValue - 250000
             let bandTwoPercentage = (bandTwoTop * 5) / 100
             stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentage))
-        } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue <= 250000 {
-            stampDuty.text = "£" + String(format: "%.0f", 0)
         } else {
-            print("Fail")
+            stampDuty.text = "£" + String(format: "%.0f", 0)
         }
+        
+
         
     }
     
@@ -167,7 +175,7 @@ class MortgageCalculator: UIViewController {
     }
         
     @IBAction func dropdownClicked(_ sender: Any) {
-        dataSource = ["First Time Buyer", "Home Purchase", "Remortgage"]
+        dataSource = ["First Time Buyer", "Home Purchase", "Remortgage       "]
         selectedButton = borrowingDropdown
         addTransparanetView(frames: borrowingDropdown.frame)
     }
@@ -180,7 +188,24 @@ class MortgageCalculator: UIViewController {
             
             print("Borrowing Dropdown = \(borrowingDropdown.currentTitle)")
         }
-    //comment
+    
+    
+    @IBAction func resetPressed(_ sender: Any) {
+        
+        borrowingDropdown.titleLabel?.text = "Home Purchase"
+        
+        
+        
+        
+        interestTextField.text = ""
+        loanTextField.text = ""
+        termTextField.text = ""
+        valueTextField.text = ""
+        monthlyPayment.text = "£0.00"
+        stampDuty.text = "£0"
+        loanToValue.text = "0%"
+       
+    }
     
     
 
