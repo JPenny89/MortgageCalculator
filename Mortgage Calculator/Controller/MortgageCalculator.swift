@@ -109,22 +109,46 @@ class MortgageCalculator: UIViewController {
         
         let propertyValue = Double (valueTextField.text!) ?? 0.0
         
-        if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 1500000 {
+        
+        if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue > 1500000 {
+            let bandFourTopFTB = propertyValue - 1500000
+            let bandFourPercentageFTB = (bandFourTopFTB * 12) / 100
+            let bandFourTotalFTB = 33750 + 57500 + bandFourPercentageFTB
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandFourTotalFTB))
+        } else if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue > 925000 && propertyValue <= 1500000 {
+            let bandThreeTopFTB = propertyValue - 925000
+            let bandThreePercentageFTB = (bandThreeTopFTB * 10) / 100
+            let bandThreeTotalFTB = 33750 + bandThreePercentageFTB
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandThreeTotalFTB))
+        } else if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue > 625000 && propertyValue <= 925000 {
+            let bandTwoTopFTB = propertyValue - 625000
+            let bandTwoPercentageFTB = ((bandTwoTopFTB * 5) / 100) + 18750
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentageFTB))
+        } else if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue > 425000 && propertyValue <= 625000 {
+            let bandTwoTopFTB = propertyValue - 425000
+            let bandTwoPercentageFTB = (bandTwoTopFTB * 5) / 100
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentageFTB))
+        } else if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue <= 250000 {
+            stampDuty.text = "£" + String(format: "%.0f", 0)
+        }
+        
+        
+        else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 1500000 {
             let bandFourTop = propertyValue - 1500000
             let bandFourPercentage = (bandFourTop * 12) / 100
             let bandFourTotal = 33750 + 57500 + bandFourPercentage
-            stampDuty.text = "£" + String(format: "%.2f", Double(bandFourTotal))
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandFourTotal))
         } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 925000 && propertyValue <= 1500000 {
             let bandThreeTop = propertyValue - 925000
             let bandThreePercentage = (bandThreeTop * 10) / 100
             let bandThreeTotal = 33750 + bandThreePercentage
-            stampDuty.text = "£" + String(format: "%.2f", Double(bandThreeTotal))
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandThreeTotal))
         } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 250000 && propertyValue <= 925000 {
             let bandTwoTop = propertyValue - 250000
             let bandTwoPercentage = (bandTwoTop * 5) / 100
-            stampDuty.text = "£" + String(format: "%.2f", Double(bandTwoPercentage))
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentage))
         } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue <= 250000 {
-            stampDuty.text = "£" + String(format: "%.2f", 0)
+            stampDuty.text = "£" + String(format: "%.0f", 0)
         } else {
             print("Fail")
         }
