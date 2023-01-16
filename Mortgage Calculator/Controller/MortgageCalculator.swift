@@ -180,23 +180,20 @@ class MortgageCalculator: UIViewController {
         addTransparanetView(frames: borrowingDropdown.frame)
     }
     
+    
     @IBAction func calculatePressed(_ sender: Any) {
         
-            calculateMonthlyRepayment()
-            calculateStampDuty()
-            calculateLTV()
-            
-            print("Borrowing Dropdown = \(borrowingDropdown.currentTitle)")
-        }
+        calculateMonthlyRepayment()
+        calculateStampDuty()
+        calculateLTV()
+        
+    }
     
     
+
     @IBAction func resetPressed(_ sender: Any) {
         
         borrowingDropdown.titleLabel?.text = "Home Purchase"
-        
-        
-        
-        
         interestTextField.text = ""
         loanTextField.text = ""
         termTextField.text = ""
@@ -204,10 +201,8 @@ class MortgageCalculator: UIViewController {
         monthlyPayment.text = "£0.00"
         stampDuty.text = "£0"
         loanToValue.text = "0%"
-       
+        
     }
-    
-    
 
 }
 
