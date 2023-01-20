@@ -97,16 +97,12 @@ class MortgageCalculator: UIViewController {
         
         let monthlyPaymentFigure = loan * bothLines
         
-        monthlyPayment.text = "£" + String(format: "%.2f", Double(monthlyPaymentFigure))
+        let monthlyPaymentFigureThousands = monthlyPaymentFigure.thousands()
         
-        print("Interest Rate Decimal = \(interestRate)")
-        print("Loan Amount = \(loan)")
-        print("Total Term Payments = \(totalPayments)")
-        print("Top Line = \(topLine)")
-        print("Bottom Line = \(bottomLine)")
-        print("Both Lines = \(bothLines)")
+        print(monthlyPaymentFigureThousands)
         
-        
+        monthlyPayment.text = "£" + monthlyPaymentFigureThousands
+          
     }
     
     //comment
@@ -235,6 +231,15 @@ extension MortgageCalculator: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedButton.setTitle(dataSource[indexPath.row], for: .normal)
         removeTransparentView()
+    }
+}
+
+extension Double {
+    func thousands() -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        return formatter.string(for: self) ?? ""
     }
 }
 
