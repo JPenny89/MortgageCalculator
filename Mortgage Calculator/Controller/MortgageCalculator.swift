@@ -137,17 +137,17 @@ class MortgageCalculator: UIViewController {
 //        }
         
         
-        else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 1500000 {
+        else if borrowingDropdown.currentTitle == "Buying Next home" && propertyValue > 1500000 {
             let bandFourTop = propertyValue - 1500000
             let bandFourPercentage = (bandFourTop * 12) / 100
             let bandFourTotal = 33750 + 57500 + bandFourPercentage
             stampDuty.text = "£" + String(format: "%.0f", Double(bandFourTotal))
-        } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 925000 && propertyValue <= 1500000 {
+        } else if borrowingDropdown.currentTitle == "Buying Next home" && propertyValue > 925000 && propertyValue <= 1500000 {
             let bandThreeTop = propertyValue - 925000
             let bandThreePercentage = (bandThreeTop * 10) / 100
             let bandThreeTotal = 33750 + bandThreePercentage
             stampDuty.text = "£" + String(format: "%.0f", Double(bandThreeTotal))
-        } else if borrowingDropdown.currentTitle == "Home Purchase" && propertyValue > 250000 && propertyValue <= 925000 {
+        } else if borrowingDropdown.currentTitle == "Buying Next home" && propertyValue > 250000 && propertyValue <= 925000 {
             let bandTwoTop = propertyValue - 250000
             let bandTwoPercentage = (bandTwoTop * 5) / 100
             stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentage))
@@ -171,7 +171,7 @@ class MortgageCalculator: UIViewController {
     }
         
     @IBAction func dropdownClicked(_ sender: Any) {
-        dataSource = ["First Time Buyer", "Home Purchase", "Remortgage       "]
+        dataSource = ["First Time Buyer", "Buying Next Home", "Remortgage       "]
         selectedButton = borrowingDropdown
         addTransparanetView(frames: borrowingDropdown.frame)
     }
@@ -189,7 +189,7 @@ class MortgageCalculator: UIViewController {
 
     @IBAction func resetPressed(_ sender: Any) {
         
-        borrowingDropdown.titleLabel?.text = "Home Purchase"
+        borrowingDropdown.titleLabel?.text = "Select"
         interestTextField.text = ""
         loanTextField.text = ""
         termTextField.text = ""
