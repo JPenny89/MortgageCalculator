@@ -39,7 +39,7 @@ class MortgageCalculator: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        borrowingDropdown.titleLabel?.text = "Type of Borrowing"
+
         
         monthlyPayment.text = "£0.00"
         stampDuty.text = "£0"
@@ -105,7 +105,7 @@ class MortgageCalculator: UIViewController {
           
     }
     
-    //comment
+    
 
     
     func calculateStampDuty() {
@@ -132,9 +132,7 @@ class MortgageCalculator: UIViewController {
             stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentageFTB))
         }
         
-//        else if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue <= 250000 {
-//            stampDuty.text = "£" + String(format: "%.0f", 0)
-//        }
+
         
         
         else if borrowingDropdown.currentTitle == "Buying Next home" && propertyValue > 1500000 {
