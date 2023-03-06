@@ -36,8 +36,14 @@ class MortgageCalculator: UIViewController {
     
     var dataSource = [String]()
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.largeContentTitle = "Title"
+        
+        
         
 
         
@@ -112,6 +118,8 @@ class MortgageCalculator: UIViewController {
         
         let propertyValue = Double (valueTextField.text!) ?? 0.0
         
+        //MARK: - FIRST TIME BUYER (FTB)
+        
         if borrowingDropdown.currentTitle == "First Time Buyer" && propertyValue > 1500000 {
             let bandFourTopFTB = propertyValue - 1500000
             let bandFourPercentageFTB = (bandFourTopFTB * 12) / 100
@@ -132,28 +140,49 @@ class MortgageCalculator: UIViewController {
             stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentageFTB))
         }
         
+        //MARK: - ADDITIONAL PROPERTY (ADDP)
+        
+        
+        else if borrowingDropdown.currentTitle == "Additional Property" && propertyValue > 1500000 {
+            let bandFourTopADDP = propertyValue - 1500000
+            let bandFourPercentageADDP = (bandFourTopADDP * 15) / 100
+            let bandFourTotalADDP = 7500 + 54000 + 74750 + bandFourPercentageADDP
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandFourTotalADDP))
+        } else if borrowingDropdown.currentTitle == "Additional Property" && propertyValue > 925000 && propertyValue <= 1500000 {
+            let bandThreeTopADDP = propertyValue - 925000
+            let bandThreePercentageADDP = (bandThreeTopADDP * 13) / 100
+            let bandThreeTotalADDP = 7500 + 54000 + bandThreePercentageADDP
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandThreeTotalADDP))
+        } else if borrowingDropdown.currentTitle == "Additional Property" && propertyValue > 250000 && propertyValue <= 925000 {
+            let bandTwoTopADDP = propertyValue - 250000
+            let bandTwoPercentageADDP = (bandTwoTopADDP * 8) / 100
+            let bandTwoTotalADDP = 7500 + bandTwoPercentageADDP
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoTotalADDP))
+        } else if borrowingDropdown.currentTitle == "Additional Property" && propertyValue <= 250000 {
+            let bandOnePercentageADDP = (propertyValue * 3) / 100
+            stampDuty.text = "£" + String(format: "%.0f", Double(bandOnePercentageADDP))
+        }
 
+        //MARK: - BUYING NEXT HOME
         
         
-        else if borrowingDropdown.currentTitle == "Buying Next home" && propertyValue > 1500000 {
+      else if borrowingDropdown.currentTitle == "Moving Home" && propertyValue > 1500000 {
             let bandFourTop = propertyValue - 1500000
             let bandFourPercentage = (bandFourTop * 12) / 100
             let bandFourTotal = 33750 + 57500 + bandFourPercentage
             stampDuty.text = "£" + String(format: "%.0f", Double(bandFourTotal))
-        } else if borrowingDropdown.currentTitle == "Buying Next home" && propertyValue > 925000 && propertyValue <= 1500000 {
+        } else if borrowingDropdown.currentTitle == "Moving Home" && propertyValue > 925000 && propertyValue <= 1500000 {
             let bandThreeTop = propertyValue - 925000
             let bandThreePercentage = (bandThreeTop * 10) / 100
             let bandThreeTotal = 33750 + bandThreePercentage
             stampDuty.text = "£" + String(format: "%.0f", Double(bandThreeTotal))
-        } else if borrowingDropdown.currentTitle == "Buying Next home" && propertyValue > 250000 && propertyValue <= 925000 {
+        } else if borrowingDropdown.currentTitle == "Moving Home" && propertyValue > 250000 && propertyValue <= 925000 {
             let bandTwoTop = propertyValue - 250000
             let bandTwoPercentage = (bandTwoTop * 5) / 100
             stampDuty.text = "£" + String(format: "%.0f", Double(bandTwoPercentage))
         } else {
             stampDuty.text = "£" + String(format: "%.0f", 0)
         }
-        
-
         
     }
     
@@ -169,7 +198,7 @@ class MortgageCalculator: UIViewController {
     }
         
     @IBAction func dropdownClicked(_ sender: Any) {
-        dataSource = ["First Time Buyer", "Buying Next Home", "Remortgage       "]
+        dataSource = ["First Time Buyer", "Moving Home", "Remortgage       ", "Additional Property"]
         selectedButton = borrowingDropdown
         addTransparanetView(frames: borrowingDropdown.frame)
     }
@@ -187,7 +216,7 @@ class MortgageCalculator: UIViewController {
 
     @IBAction func resetPressed(_ sender: Any) {
         
-        borrowingDropdown.titleLabel?.text = "Select"
+        borrowingDropdown.titleLabel?.text = "Please Select"
         interestTextField.text = ""
         loanTextField.text = ""
         termTextField.text = ""
