@@ -226,7 +226,18 @@ class MortgageCalculator: UIViewController {
         loanToValue.text = "0%"
         
     }
-
+    
+    
+    @IBAction func disclaimerPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToDisclaimer", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDisclaimer" {
+            let destinationVC = segue.destination as! DisclaimerViewController
+        }
+    }
+    
 }
 
 extension MortgageCalculator: UITextFieldDelegate {
