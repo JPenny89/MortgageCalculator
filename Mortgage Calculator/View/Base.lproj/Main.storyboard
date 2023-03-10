@@ -57,6 +57,13 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="Czg-Ed-7wY"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Property Value (£)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkG-8a-zt2">
+                                        <rect key="frame" x="16" y="313" width="154" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="clC-1m-MuL">
                                         <rect key="frame" x="206" y="175" width="171" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,13 +91,6 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="VmM-Ta-kKe"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Property Value (£)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkG-8a-zt2">
-                                        <rect key="frame" x="16" y="313" width="154" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNe-WZ-O1A" userLabel="Type of Borrowing Dropdown">
                                         <rect key="frame" x="168" y="48" width="209" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -184,13 +184,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="borrowingDropdown" destination="WNe-WZ-O1A" id="CCO-1j-BE6"/>
+                        <outlet property="borrowingDropdown" destination="WNe-WZ-O1A" id="UzB-cx-VZg"/>
+                        <outlet property="calculateButton" destination="uPn-OO-HGb" id="XFd-8c-tUo"/>
+                        <outlet property="disclaimerButton" destination="Y23-Ak-HXb" id="IBb-XH-GCo"/>
+                        <outlet property="inputBar" destination="lIQ-x7-IO5" id="Gwh-dN-KMB"/>
+                        <outlet property="interestLabel" destination="fKN-uX-8u3" id="Mba-wh-PFE"/>
                         <outlet property="interestTextField" destination="mYr-9a-fxK" id="Tpw-rE-dfJ"/>
+                        <outlet property="loanLabel" destination="r6k-BX-3jj" id="EY9-KP-xUu"/>
                         <outlet property="loanTextField" destination="clC-1m-MuL" id="PMb-dV-5aJ"/>
                         <outlet property="loanToValue" destination="Ohs-pP-GX2" id="J60-nZ-aav"/>
+                        <outlet property="loanToValueLabel" destination="T8o-eN-NpG" id="q8G-hG-AR0"/>
                         <outlet property="monthlyPayment" destination="gse-Fo-4UT" id="wgh-Ci-jbL"/>
+                        <outlet property="outputBar" destination="D6v-ay-doA" id="jwd-4D-yLh"/>
+                        <outlet property="repaymentLabel" destination="3og-Qo-znt" id="V6q-ua-HuD"/>
+                        <outlet property="resetButton" destination="9HQ-Nz-feQ" id="pZ5-24-NTK"/>
                         <outlet property="stampDuty" destination="vPL-gu-1ab" id="3sU-5b-kjS"/>
+                        <outlet property="stampDutyLabel" destination="TLu-lI-5dy" id="gVE-SM-zOY"/>
+                        <outlet property="termLabel" destination="5E0-sN-E6V" id="AlY-Wl-Fay"/>
                         <outlet property="termTextField" destination="mVa-sc-sSM" id="as4-kX-4Xx"/>
+                        <outlet property="typeBorrowingLabel" destination="cSs-8o-Szm" id="Dqk-NZ-SGA"/>
+                        <outlet property="valueLabel" destination="DkG-8a-zt2" id="1Xj-Uf-7cr"/>
                         <outlet property="valueTextField" destination="ERh-ri-NOS" id="O5c-w6-CgO"/>
                         <segue destination="w4N-dJ-DDp" kind="presentation" identifier="goToDisclaimer" id="eOm-Yn-Usf"/>
                     </connections>
@@ -227,6 +240,9 @@
                         <viewLayoutGuide key="safeArea" id="qhu-JH-86i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="disclaimerText" destination="WNy-e3-dN0" id="jbB-ie-hJ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwR-0B-7Xb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,16 +12,47 @@ class CellClass: UITableViewCell {
 
 }
 
+let mintGreen = UIColor(hex: "#3eb489ff")
+let lightYellow = UIColor(hex: "#fffd9cff")
+let mediumYellow = UIColor(hex: "#ffec64ff")
+let darkYellow = UIColor(hex: "#ffe135ff")
+
+
 class MortgageCalculator: UIViewController {
 
-    @IBOutlet weak var borrowingDropdown: UIButton!
+    
+    @IBOutlet weak var inputBar: UIView!
+    
+    
+    @IBOutlet weak var outputBar: UIView!
+    
+    
     @IBOutlet weak var interestTextField: UITextField!
     @IBOutlet weak var loanTextField: UITextField!
     @IBOutlet weak var termTextField: UITextField!
     @IBOutlet weak var valueTextField: UITextField!
+    
     @IBOutlet weak var monthlyPayment: UILabel!
     @IBOutlet weak var stampDuty: UILabel!
     @IBOutlet weak var loanToValue: UILabel!
+    
+    
+    
+    @IBOutlet weak var borrowingDropdown: UIButton!
+    @IBOutlet weak var calculateButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var disclaimerButton: UIButton!
+    
+    @IBOutlet weak var typeBorrowingLabel: UILabel!
+    @IBOutlet weak var interestLabel: UILabel!
+    
+    @IBOutlet weak var loanLabel: UILabel!
+    @IBOutlet weak var termLabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel!
+    
+    @IBOutlet weak var repaymentLabel: UILabel!
+    @IBOutlet weak var stampDutyLabel: UILabel!
+    @IBOutlet weak var loanToValueLabel: UILabel!
     
     let transparentView = UIView()
     let tableView = UITableView()
@@ -32,6 +63,32 @@ class MortgageCalculator: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = mintGreen
+        inputBar.backgroundColor = mintGreen
+        outputBar.backgroundColor = mintGreen
+        
+        typeBorrowingLabel.textColor = mediumYellow
+        interestLabel.textColor = mediumYellow
+        loanLabel.textColor = mediumYellow
+        termLabel.textColor = mediumYellow
+        valueLabel.textColor = mediumYellow
+        
+        repaymentLabel.textColor = mediumYellow
+        stampDutyLabel.textColor = mediumYellow
+        loanToValueLabel.textColor = mediumYellow
+        
+        monthlyPayment.textColor = mediumYellow
+        stampDuty.textColor = mediumYellow
+        loanToValue.textColor = mediumYellow
+        
+        
+        borrowingDropdown.tintColor = mediumYellow
+        calculateButton.tintColor = mediumYellow
+        resetButton.tintColor = mediumYellow
+        disclaimerButton.tintColor = mediumYellow
+        
+        
         
         view.largeContentTitle = "Title"
         monthlyPayment.text = "£0.00"
@@ -258,6 +315,34 @@ extension Double {
         formatter.numberStyle = .decimal
         formatter.maximumFractionDigits = 2
         return formatter.string(for: self) ?? ""
+    }
+}
+
+extension UIColor {
+    public convenience init?(hex: String) {
+        let r, g, b, a: CGFloat
+
+        if hex.hasPrefix("#") {
+            let start = hex.index(hex.startIndex, offsetBy: 1)
+            let hexColor = String(hex[start...])
+
+            if hexColor.count == 8 {
+                let scanner = Scanner(string: hexColor)
+                var hexNumber: UInt64 = 0
+
+                if scanner.scanHexInt64(&hexNumber) {
+                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
+                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
+                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
+                    a = CGFloat(hexNumber & 0x000000ff) / 255
+
+                    self.init(red: r, green: g, blue: b, alpha: a)
+                    return
+                }
+            }
+        }
+
+        return nil
     }
 }
 
