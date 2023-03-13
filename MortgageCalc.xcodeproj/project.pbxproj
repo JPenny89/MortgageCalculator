@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6325BD322950A59C0099B3BD /* Mortgage Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mortgage Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6325BD322950A59C0099B3BD /* MortgageCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6325BD352950A59C0099B3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6325BD372950A59C0099B3BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6325BD392950A59C0099B3BD /* MortgageCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculator.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		6325BD332950A59C0099B3BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6325BD322950A59C0099B3BD /* Mortgage Calculator.app */,
+				6325BD322950A59C0099B3BD /* MortgageCalc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,9 +89,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6325BD312950A59C0099B3BD /* Mortgage Calculator */ = {
+		6325BD312950A59C0099B3BD /* MortgageCalc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6325BD462950A59F0099B3BD /* Build configuration list for PBXNativeTarget "Mortgage Calculator" */;
+			buildConfigurationList = 6325BD462950A59F0099B3BD /* Build configuration list for PBXNativeTarget "MortgageCalc" */;
 			buildPhases = (
 				6325BD2E2950A59C0099B3BD /* Sources */,
 				6325BD2F2950A59C0099B3BD /* Frameworks */,
@@ -101,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = "Mortgage Calculator";
+			name = MortgageCalc;
 			productName = "Mortgage Calculator";
-			productReference = 6325BD322950A59C0099B3BD /* Mortgage Calculator.app */;
+			productReference = 6325BD322950A59C0099B3BD /* MortgageCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6325BD2D2950A59C0099B3BD /* Build configuration list for PBXProject "Mortgage Calculator" */;
+			buildConfigurationList = 6325BD2D2950A59C0099B3BD /* Build configuration list for PBXProject "MortgageCalc" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6325BD312950A59C0099B3BD /* Mortgage Calculator */,
+				6325BD312950A59C0099B3BD /* MortgageCalc */,
 			);
 		};
 /* End PBXProject section */
@@ -321,7 +321,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamespenny.Mortgage-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MortgageCalc;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -352,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamespenny.Mortgage-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MortgageCalc;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -365,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6325BD2D2950A59C0099B3BD /* Build configuration list for PBXProject "Mortgage Calculator" */ = {
+		6325BD2D2950A59C0099B3BD /* Build configuration list for PBXProject "MortgageCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6325BD442950A59F0099B3BD /* Debug */,
@@ -374,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6325BD462950A59F0099B3BD /* Build configuration list for PBXNativeTarget "Mortgage Calculator" */ = {
+		6325BD462950A59F0099B3BD /* Build configuration list for PBXNativeTarget "MortgageCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6325BD472950A59F0099B3BD /* Debug */,
