@@ -12,7 +12,8 @@ class CellClass: UITableViewCell {
 
 }
 
-let mintGreen = UIColor(hex: "#3eb489ff")
+//let mintGreen = UIColor(hex: "#3eb489ff")
+let mintGreen = UIColor(hex: "#319e76ff")
 let lightYellow = UIColor(hex: "#fffd9cff")
 let mediumYellow = UIColor(hex: "#ffec64ff")
 let darkYellow = UIColor(hex: "#ffe135ff")
@@ -64,29 +65,29 @@ class MortgageCalculator: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = mintGreen
-        inputBar.backgroundColor = mintGreen
-        outputBar.backgroundColor = mintGreen
+//        view.backgroundColor = mintGreen
+//        inputBar.backgroundColor = mintGreen
+//        outputBar.backgroundColor = mintGreen
         
-        typeBorrowingLabel.textColor = mediumYellow
-        interestLabel.textColor = mediumYellow
-        loanLabel.textColor = mediumYellow
-        termLabel.textColor = mediumYellow
-        valueLabel.textColor = mediumYellow
+        typeBorrowingLabel.textColor = mintGreen
+        interestLabel.textColor = mintGreen
+        loanLabel.textColor = mintGreen
+        termLabel.textColor = mintGreen
+        valueLabel.textColor = mintGreen
         
-        repaymentLabel.textColor = mediumYellow
-        stampDutyLabel.textColor = mediumYellow
-        loanToValueLabel.textColor = mediumYellow
+        repaymentLabel.textColor = mintGreen
+        stampDutyLabel.textColor = mintGreen
+        loanToValueLabel.textColor = mintGreen
         
-        monthlyPayment.textColor = mediumYellow
-        stampDuty.textColor = mediumYellow
-        loanToValue.textColor = mediumYellow
+        monthlyPayment.textColor = mintGreen
+        stampDuty.textColor = mintGreen
+        loanToValue.textColor = mintGreen
         
         
-        borrowingDropdown.tintColor = mediumYellow
-        calculateButton.tintColor = mediumYellow
-        resetButton.tintColor = mediumYellow
-        disclaimerButton.tintColor = mediumYellow
+        borrowingDropdown.tintColor = mintGreen
+        calculateButton.tintColor = mintGreen
+        resetButton.tintColor = mintGreen
+//        disclaimerButton.tintColor = mintGreen
         
         
         
