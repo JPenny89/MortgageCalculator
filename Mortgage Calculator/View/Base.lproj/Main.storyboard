@@ -29,13 +29,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="358" height="23.666666666666668"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Type of Borrowing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSs-8o-Szm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="23.666666666666668"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="154.66666666666666" height="23.666666666666668"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNe-WZ-O1A" userLabel="Type of Borrowing Dropdown">
-                                                                <rect key="frame" x="143.66666666666663" y="0.0" width="214.33333333333337" height="23.666666666666668"/>
+                                                                <rect key="frame" x="154.66666666666663" y="0.0" width="203.33333333333337" height="23.666666666666668"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Select"/>
                                                                 <connections>
@@ -53,13 +53,13 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKN-uX-8u3" userLabel="Interest Rate">
                                                                 <rect key="frame" x="0.0" y="0.0" width="154" height="23.666666666666668"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mYr-9a-fxK">
                                                                 <rect key="frame" x="204" y="0.0" width="154" height="23.666666666666668"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 <connections>
                                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Czg-Ed-7wY"/>
@@ -76,13 +76,13 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Loan Amount (£)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6k-BX-3jj">
                                                                 <rect key="frame" x="0.0" y="0.0" width="154" height="24"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="clC-1m-MuL">
                                                                 <rect key="frame" x="204" y="0.0" width="154" height="24"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 <connections>
                                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zxU-0b-JhT"/>
@@ -99,13 +99,13 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Term Length (years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E0-sN-E6V">
                                                                 <rect key="frame" x="0.0" y="0.0" width="154" height="23.666666666666668"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-sc-sSM">
                                                                 <rect key="frame" x="204" y="0.0" width="154" height="23.666666666666668"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 <connections>
                                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="EaB-Kw-gMa"/>
@@ -122,13 +122,13 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Property Value (£)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkG-8a-zt2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="154" height="23.666666666666668"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-ri-NOS" userLabel="Value Text Field">
                                                                 <rect key="frame" x="204" y="0.0" width="154" height="23.666666666666668"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 <connections>
                                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="VmM-Ta-kKe"/>
@@ -183,7 +183,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Monthly Repayment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3og-Qo-znt">
                                                                 <rect key="frame" x="0.0" y="0.0" width="149" height="38.666666666666664"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -192,7 +192,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="YNK-Rj-P6t"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -207,7 +207,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Stamp Duty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-lI-5dy">
                                                                 <rect key="frame" x="0.0" y="0.0" width="149" height="38.666666666666664"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -216,7 +216,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="clF-kZ-vOU"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -231,7 +231,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan to Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8o-eN-NpG">
                                                                 <rect key="frame" x="0.0" y="0.0" width="149" height="38.666666666666664"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -240,7 +240,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="166" id="65T-pT-F8K"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -290,17 +290,24 @@
                                 <rect key="frame" x="0.0" y="621.66666666666663" width="393" height="196.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HQ-Nz-feQ" userLabel="Reset Button">
-                                        <rect key="frame" x="163" y="81" width="67.333333333333314" height="34.333333333333343"/>
+                                        <rect key="frame" x="162" y="81" width="69.333333333333314" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Reset"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Reset">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yj9-nW-ifE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPn-OO-HGb" userLabel="Calculate Button">
-                                        <rect key="frame" x="149" y="8" width="95" height="34.333333333333336"/>
+                                        <rect key="frame" x="121.66666666666669" y="8" width="150" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="jb4-sI-8HN"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Calculate">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejE-uj-grf"/>
                                         </connections>
@@ -375,48 +382,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLL-dk-KEW" userLabel="Disclaimer Title">
-                                <rect key="frame" x="19" y="59" width="355" height="75"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNy-e3-dN0">
-                                <rect key="frame" x="19" y="208.99999999999997" width="355" height="365.33333333333326"/>
-                                <string key="text">Your monthly repayments contribute to both repaying the money you've borrowed, as well as paying interest charges.
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ah-6T-Psk">
+                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mkr-wn-Maz" userLabel="Title View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="131"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLL-dk-KEW" userLabel="Disclaimer Title">
+                                                <rect key="frame" x="136.66666666666666" y="51.666666666666664" width="119.99999999999997" height="27.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="CLL-dk-KEW" firstAttribute="centerY" secondItem="Mkr-wn-Maz" secondAttribute="centerY" id="J9Z-ld-nqu"/>
+                                            <constraint firstItem="CLL-dk-KEW" firstAttribute="centerX" secondItem="Mkr-wn-Maz" secondAttribute="centerX" id="jGY-tR-vzw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-Cu-8gq" userLabel="Body View">
+                                        <rect key="frame" x="0.0" y="148" width="393" height="428"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNy-e3-dN0">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="428"/>
+                                                <string key="text">Your monthly repayments contribute to both repaying the money you've borrowed, as well as paying interest charges.
 
 The total amount you repay is a combination of the mortgage debt and the interest charges accrued over the lifetime of the mortgage.
 
 Note that this mortgage calculator assumes your interest rate will remain the same for the full term of the mortgage, and you are on a capital repayment, rather than an interest only, mortgage.
 
 This calculator should only be used as a guide and you should seek advice from a qualifed Mortgage Representative before commiting to any form of mortgage repayments.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcw-ef-bJO">
-                                <rect key="frame" x="155" y="628.33333333333337" width="83.333333333333314" height="34"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Dismiss"/>
-                                <connections>
-                                    <action selector="dismissPressed:" destination="w4N-dJ-DDp" eventType="touchUpInside" id="f9k-jm-3PM"/>
-                                </connections>
-                            </button>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="WNy-e3-dN0" secondAttribute="trailing" id="7DW-Za-0QM"/>
+                                            <constraint firstItem="WNy-e3-dN0" firstAttribute="centerY" secondItem="eVc-Cu-8gq" secondAttribute="centerY" id="QMa-AD-iaD"/>
+                                            <constraint firstItem="WNy-e3-dN0" firstAttribute="top" secondItem="eVc-Cu-8gq" secondAttribute="top" id="bgT-69-7qj"/>
+                                            <constraint firstItem="WNy-e3-dN0" firstAttribute="centerX" secondItem="eVc-Cu-8gq" secondAttribute="centerX" id="g3X-MQ-OyJ"/>
+                                            <constraint firstItem="WNy-e3-dN0" firstAttribute="leading" secondItem="eVc-Cu-8gq" secondAttribute="leading" id="vJv-Sb-W0N"/>
+                                            <constraint firstAttribute="bottom" secondItem="WNy-e3-dN0" secondAttribute="bottom" id="zIr-xh-bCF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhY-8D-xGm" userLabel="Button View">
+                                        <rect key="frame" x="0.0" y="593" width="393" height="131"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcw-ef-bJO">
+                                                <rect key="frame" x="121.66666666666669" y="46.666666666666629" width="150" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="tAm-JK-R9z"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Dismiss">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="dismissPressed:" destination="w4N-dJ-DDp" eventType="touchUpInside" id="f9k-jm-3PM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="rcw-ef-bJO" firstAttribute="centerY" secondItem="FhY-8D-xGm" secondAttribute="centerY" id="GNI-na-qvn"/>
+                                            <constraint firstItem="rcw-ef-bJO" firstAttribute="centerX" secondItem="FhY-8D-xGm" secondAttribute="centerX" id="dcN-WL-ZmB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mkr-wn-Maz" firstAttribute="leading" secondItem="7ah-6T-Psk" secondAttribute="leading" id="7AP-FR-H5Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="FhY-8D-xGm" secondAttribute="trailing" id="88y-EM-Xa1"/>
+                                    <constraint firstItem="eVc-Cu-8gq" firstAttribute="centerY" secondItem="7ah-6T-Psk" secondAttribute="centerY" id="AlW-Z2-Tf6"/>
+                                    <constraint firstItem="Mkr-wn-Maz" firstAttribute="top" secondItem="7ah-6T-Psk" secondAttribute="top" id="DNQ-mz-CI9"/>
+                                    <constraint firstItem="FhY-8D-xGm" firstAttribute="leading" secondItem="7ah-6T-Psk" secondAttribute="leading" id="WXf-nX-3dt"/>
+                                    <constraint firstAttribute="trailing" secondItem="eVc-Cu-8gq" secondAttribute="trailing" id="gb3-aB-x3j"/>
+                                    <constraint firstItem="eVc-Cu-8gq" firstAttribute="centerY" secondItem="7ah-6T-Psk" secondAttribute="centerY" id="hEn-q9-PO4"/>
+                                    <constraint firstItem="eVc-Cu-8gq" firstAttribute="width" secondItem="Mkr-wn-Maz" secondAttribute="height" multiplier="3:1" id="mBJ-un-fL3"/>
+                                    <constraint firstAttribute="bottom" secondItem="FhY-8D-xGm" secondAttribute="bottom" id="mlM-uG-uGP"/>
+                                    <constraint firstItem="eVc-Cu-8gq" firstAttribute="centerX" secondItem="7ah-6T-Psk" secondAttribute="centerX" id="mxm-N2-Zd4"/>
+                                    <constraint firstItem="eVc-Cu-8gq" firstAttribute="width" secondItem="FhY-8D-xGm" secondAttribute="height" multiplier="3:1" id="nL2-MZ-QAR"/>
+                                    <constraint firstItem="eVc-Cu-8gq" firstAttribute="leading" secondItem="7ah-6T-Psk" secondAttribute="leading" id="slw-ZS-JgW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mkr-wn-Maz" secondAttribute="trailing" id="v9C-x4-hot"/>
+                                    <constraint firstItem="eVc-Cu-8gq" firstAttribute="centerX" secondItem="7ah-6T-Psk" secondAttribute="centerX" id="voc-5I-Nvy"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qhu-JH-86i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rcw-ef-bJO" firstAttribute="top" secondItem="WNy-e3-dN0" secondAttribute="bottom" constant="54" id="1dM-lR-FMQ"/>
-                            <constraint firstItem="WNy-e3-dN0" firstAttribute="top" secondItem="CLL-dk-KEW" secondAttribute="bottom" constant="75" id="Dc9-9i-cqe"/>
-                            <constraint firstItem="WNy-e3-dN0" firstAttribute="centerX" secondItem="dFJ-Lp-9qq" secondAttribute="centerX" id="SO6-Q8-WIu"/>
-                            <constraint firstItem="WNy-e3-dN0" firstAttribute="centerY" secondItem="dFJ-Lp-9qq" secondAttribute="centerY" id="cbe-3r-JOb"/>
-                            <constraint firstItem="CLL-dk-KEW" firstAttribute="top" secondItem="qhu-JH-86i" secondAttribute="top" id="dOs-x6-klh"/>
-                            <constraint firstItem="rcw-ef-bJO" firstAttribute="centerX" secondItem="dFJ-Lp-9qq" secondAttribute="centerX" id="jlW-Rq-d1x"/>
-                            <constraint firstItem="qhu-JH-86i" firstAttribute="trailing" secondItem="CLL-dk-KEW" secondAttribute="trailing" constant="19" id="jzB-fK-6Xg"/>
-                            <constraint firstItem="WNy-e3-dN0" firstAttribute="leading" secondItem="qhu-JH-86i" secondAttribute="leading" constant="19" id="m5w-od-s7F"/>
-                            <constraint firstItem="qhu-JH-86i" firstAttribute="trailing" secondItem="WNy-e3-dN0" secondAttribute="trailing" constant="19" id="n4c-u3-6fG"/>
-                            <constraint firstItem="rcw-ef-bJO" firstAttribute="top" secondItem="WNy-e3-dN0" secondAttribute="bottom" constant="54" id="tjN-n8-JaN"/>
-                            <constraint firstItem="CLL-dk-KEW" firstAttribute="leading" secondItem="qhu-JH-86i" secondAttribute="leading" constant="19" id="ts0-Oz-REi"/>
+                            <constraint firstItem="7ah-6T-Psk" firstAttribute="leading" secondItem="qhu-JH-86i" secondAttribute="leading" id="BPh-eE-uas"/>
+                            <constraint firstItem="qhu-JH-86i" firstAttribute="bottom" secondItem="7ah-6T-Psk" secondAttribute="bottom" id="Sr5-pe-bac"/>
+                            <constraint firstItem="7ah-6T-Psk" firstAttribute="top" secondItem="qhu-JH-86i" secondAttribute="top" id="cQ6-02-Pil"/>
+                            <constraint firstItem="qhu-JH-86i" firstAttribute="trailing" secondItem="7ah-6T-Psk" secondAttribute="trailing" id="e3N-An-Sj0"/>
                         </constraints>
                     </view>
                     <connections>
